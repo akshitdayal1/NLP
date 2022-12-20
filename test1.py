@@ -17,8 +17,6 @@ import numpy as np
 # # Instantiate Model
 
 
-
-
 tokenizer = AutoTokenizer.from_pretrained('nlptown/bert-base-multilingual-uncased-sentiment')
 model = AutoModelForSequenceClassification.from_pretrained('nlptown/bert-base-multilingual-uncased-sentiment')
 
@@ -27,7 +25,6 @@ tokens
 
 
 #return_tensors
-
 
 
 tokens[0]
@@ -76,10 +73,6 @@ reviews
 
 # # Load reviews into a DF and score
 
-
-
-
-# In[51]:
 
 
 df = pd.DataFrame(np.array(reviews), columns=['Reviews'])
